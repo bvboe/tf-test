@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   ami           = "ami-01b996646377b6619"
   instance_type = "t2.micro"
   subnet_id     = "${aws_subnet.us-east-1a-public.id}"
-  #monitoring    = true
+  monitoring    = true
 }
 
 resource "aws_vpc" "example" {
